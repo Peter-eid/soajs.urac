@@ -32,8 +32,8 @@
     "request": "2.79.0",
     "shelljs": "0.7.5",
     "sinon": "*",
-    "soajs.mongodb.data": "1.0.*",
-    "soajs.controller": "1.0.*"
+    "soajs.mongodb.data": "git://github.com/soajs/soajs.mongodb.data#feature/bcryptjs",
+    "soajs.controller": "git://github.com/soajs/soajs.controller#feature/bcryptjs"
   },
   "dependencies": {
     "passport": "0.3.2",
@@ -42,8 +42,8 @@
     "passport-google-oauth": "1.0.0",
     "passport-local": "1.0.0",
     "passport-twitter": "1.0.4",
-    "soajs": "1.0.*",
-    "soajs.urac.driver": "1.0.*",
+    "soajs": "git://github.com/soajs/soajs#feature/bcryptjs",
+    "soajs.urac.driver": "git://github.com/soajs/soajs.urac.driver#feature/bcryptjs",
     "uuid": "3.0.1"
   }
 }
