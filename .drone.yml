@@ -3,7 +3,6 @@ pipeline:
     image: node:6.9.5
     commands:
       - npm install -g grunt-cli
-      - npm install
       - apt-get update && apt-get install -y g++-4.8 sendmail python make g++
     when:
       branch: [master] 
@@ -13,6 +12,7 @@ pipeline:
   test:
     image: node:6.9.5
     commands:
+       - npm install -g grunt
        - grunt coverage
     when:
      branch: [master]   
