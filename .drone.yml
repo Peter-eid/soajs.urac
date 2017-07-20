@@ -3,15 +3,10 @@ pipeline:
     image: node:6.9.5
     commands:
       - npm install -g grunt-cli
-      - apt-get update && apt-get install sendmail -y python make g++
+      - apt-get update && apt-get install g++-4.8 && apt-get install sendmail -y python make g++
+      - grunt coverage
     when:
-      branch: [master]
-  test:
-    image: node:6.9.5
-    commands:
-       - grunt coverage
-    when:
-     branch: [master]   
+      branch: [master] 
 services:
   database:
     image: mongo:3.2
