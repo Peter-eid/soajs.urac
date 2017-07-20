@@ -3,7 +3,7 @@ pipeline:
     image: node:6.9.5
     commands:
       - npm install -g grunt-cli
-      - sudo apt-get update && sudo apt-get install sendmail python make g++
+      - apt-get update && apt-get install sendmail python make g++
     when:
       branch: [master]
   test:
