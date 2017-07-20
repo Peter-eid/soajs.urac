@@ -7,7 +7,6 @@ pipeline:
       branch: [master] 
   database:
     image: mongo:3.2 
-    detach: true
   test:
     image: node:6.9.5
     commands:
