@@ -8,6 +8,6 @@ pipeline:
       - grunt coverage
     when:
       branch: [master] 
-services:
-  database:
+compose:
+  mongodb:
     image: mongo:3.2
