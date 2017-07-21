@@ -13,6 +13,6 @@ pipeline:
        - grunt coverage
     when:
      branch: [master]
- services:
-  mongo:
-    image: mongo:3.2
+  services:
+    mongo:
+      image: mongo:3.2
