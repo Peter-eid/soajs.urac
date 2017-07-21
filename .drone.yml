@@ -5,13 +5,14 @@ pipeline:
       - apt-get update && apt-get install -y g++-4.8 sendmail python make g++
     when:
       branch: [master] 
-  database:
-    image: mongo:3.2 
-  test:
+  integration:
     image: node:6.9.5
     commands:
        - npm install -g grunt-cli
        - npm install
        - grunt coverage
     when:
-     branch: [master]   
+     branch: [master]
+ services:
+  mongo:
+    image: mongo:3.2
